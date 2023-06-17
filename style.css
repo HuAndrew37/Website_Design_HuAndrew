@@ -3,71 +3,75 @@ p {
 }
 a {
     text-decoration:none;
-    }
-    .brand-name {
-        font-size:50px;
-        text-shadow:2px 2px 5px black;
-    }
-    #brand-name-1 {
-        color:#224952;
-    }
-    #brand-name-2 {
-        color:gold;
-    }
-    .header-item {
-        font-size:20px;
-        color:;
+}
+.brand-name {
+    font-size:50px;
+    text-shadow:2px 2px 5px black;
+}
+#brand-name-1 {
+    color:#224952;
+}
+#brand-name-2 {
+    color:gold;
+}
+.header-item {
+    font-size:20px;
+    color:;
 
-    }
-    ul.navbar {
-        height:100px;
-        list-style-type:none;
-        margin:0;
-        padding:0;
-        overflow:hidden;
-        position: sticky;
-        top:0;
-    }
-    .navbar li {
-        float:left;
-    }
-    .navbar li a {
-        display:block;
-        color:black;
-        text-align:center;
-        padding:14px 16px;
-        background-color:#90c1d7;
-    }
-    .navbar li a:hover {
-        background-color:#c7e0eb;
-    }
-    .heading {
-        text-align:center;
-    }
-    .rtextbutton {
+}
+ul.navbar {
+    height:100px;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    position: sticky;
+    top:0;
+}
+.navbar li {
+    float:left;
+}
+.navbar li a {
+    display:block;
+    color:black;
+    text-align:center;
+    padding:14px 16px;
+    background-color:#90c1d7;
+}
+.navbar li a:hover {
+    background-color:#c7e0eb;
+}
+.heading {
+    text-align:center;
+}
+.rtextbutton {
 border-radius:25px;
 background-color:#EEC61F;
 padding:20px;
-        margin:20px;
-        width:fit-content;
-        text-align:center;
-    }
-    .rtextbutton:hover {
-    background-color:#F6E28E;
-    }
-    .home-entry img {
-    margin-left:15px;
-    }
-    .home-entry h4 {
-    margin-left:30px;
-    }
-    article {
-    margin-left:30px;
-    }
-    article p {
-    text-indent:30px;
-    }
-    #home-resize {
-      width:632px;
-        height:362px;
-    }
+    margin:20px;
+    width:fit-content;
+    text-align:center;
+}
+.rtextbutton:hover {
+background-color:#F6E28E;
+}
+.home-entry img {
+margin-left:15px;
+}
+.home-entry h4 {
+margin-left:30px;
+}
+article {
+margin-left:30px;
+}
+article p {
+text-indent:30px;
+}
+#home-resize {
+  width:632px;
+    height:362px;
+}
+table.border-1 {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
