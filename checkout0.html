@@ -6,7 +6,6 @@
         <title>Checkout</title>
         <script>
             var x = 0;
-            document.getElementById('total-price').textContent = x;
         </script>
     </head>
     <body>
@@ -52,7 +51,7 @@
                     4 trillion lions vs the Sun
                 </td>
                 <td class="catalogue-table">
-                    <button onclick="x += 1">Order 1</button>
+                    <button onclick="x += 1;document.getElementById('total-price').textContent = x.toString();">Order 1</button>
                 </td>
                 <td class="catalogue-table">$14.99</td>
             </tr>
