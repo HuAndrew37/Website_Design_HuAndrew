@@ -19,20 +19,18 @@
         }
         console.log(readFile("data.txt"))
         function writeFile(path, text) {
-            const blob = new Blob([text], { type: 'text/plain' });
-            const xhr = new XMLHttpRequest();
-            xhr.open('PUT', path);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'purchase.php', true);
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200 || xhr.status === 201) {
-                        console.log('Data written to file:', path);
-                    } else {
-                        console.log('Error writing data to file:', path);
-                    }
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    alert(xhr.responseText);
+                } else {
+                    alert('Error: ' + xhr.status);
                 }
-            };
-            xhr.send(blob);
-        }
+            }
+        };
         function buyOrder(d) {
             let s = "Item,Price,In Stock"
             for (let i in readFile("data.txt").split("\n")) {
