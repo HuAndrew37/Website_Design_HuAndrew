@@ -22,6 +22,7 @@ ul.navbar {
     overflow:hidden;
     position:sticky;
     top:0;
+    display:inline-block;
 }
 .navbar li {
     float:left;
@@ -85,4 +86,7 @@ text-indent:30px;
 }
 #checkout-button:hover {
     background-color:#FF7377;
+}
+#icon-inline-block {
+    display:inline-block;
 }
