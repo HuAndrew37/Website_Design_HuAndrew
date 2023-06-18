@@ -40,9 +40,9 @@ ul.navbar {
     text-align:center;
 }
 .rtextbutton {
-border-radius:25px;
-background-color:#EEC61F;
-padding:20px;
+    border-radius:25px;
+    background-color:#EEC61F;
+    padding:20px;
     margin:20px;
     width:fit-content;
     text-align:center;
@@ -72,4 +72,13 @@ text-indent:30px;
 .catalogue-table {
     border: 1px solid black;
     border-collapse: collapse;
+}
+#checkout-button {
+    border-radius:25px;
+    background-color:red;
+    padding:40px;
+    margin:40px;
+    width:fit-content;
+    text-align:center;
+    font-size:30px;
 }
