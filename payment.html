@@ -40,20 +40,19 @@
         <h5 class="heading">Total Price: <span id="total-price"></span></h5>
         <form>
             <h2>Payment Items</h2>
-            <input type="radio" id="card1">
-            <label for="card1">Debit</label>
+            Card Type:
             <br>
-            <input type="radio" id="card2">
-            <label for="card2">Mastercard</label>
+            <select>
+                <option>Credit</option>
+                <option>Debit</option>
+                <option>VISA</option>
+            </select>
+            Card Number:
             <br>
-            <input type="radio" id="card3">
-            <label for="card3">VISA</label>
+            <input type="text">
+            PIN:
             <br>
-            <input type="text" id="cardno">
-            <label for="cardno">Card Number</label>
-            <br>
-            <input type="text" id="pin">
-            <label for="pin">PIN</label>
+            <button id="payment-button" onclick="alert('Credit card number or PIN does not match. Please provide a correct value.')">Complete Order</button>
         </form>
         <br>
         <hr>
