@@ -1,6 +1,9 @@
 p {
     line-height:1.6;
 }
+a {
+    text-decoration:none;
+}
 .brand-name {
     font-size:50px;
     text-shadow:2px 2px 5px black;
