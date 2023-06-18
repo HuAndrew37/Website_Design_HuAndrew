@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <title>References</title>
+        <title>Checkout</title>
+        <script>
+            var x = 0;
+            document.getElementById('total-price').textContent = x;
+        </script>
     </head>
     <body>
         <div id="sticky">
@@ -47,7 +51,9 @@
                     <br>
                     4 trillion lions vs the Sun
                 </td>
-                <td class="catalogue-table"></td>
+                <td class="catalogue-table">
+                    <button onclick="x += 1">Order 1</button>
+                </td>
                 <td class="catalogue-table">$14.99</td>
             </tr>
             <tr>
@@ -77,7 +83,8 @@
                 <td class="catalogue-table"></td>
                 <td class="catalogue-table">$25.99</td>
             </tr>
-    </table>
+        </table>
+        <p id="total-price"></p>
         <br>
         <a href="checkout0.html"><p id="checkout-button">Proceed to Checkout</p></a>
         <br>
