@@ -66,10 +66,10 @@ text-indent:30px;
   width:822px;
     height:551px;
 }
-table.border-1 {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
 .img-attribution {
     font-size:8px;
+}
+.catalogue-table {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
