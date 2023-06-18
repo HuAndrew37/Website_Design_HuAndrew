@@ -7,44 +7,44 @@
     <script>
         // read from txt
         function readFile(path) {
-          const xhr = new XMLHttpRequest();
-          xhr.open('GET', path, false);
-          xhr.send(null);
-          if (xhr.status === 200) {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', path, false);
+            xhr.send(null);
+            if (xhr.status === 200) {
                 return xhr.responseText;
-        } else {
-            console.log('Error reading file:', path);
-            return '';
-        }
+            } else {
+                console.log('Error reading file:', path);
+                return '';
+            }
         }
         console.log(readFile("data.txt"))
         function writeFile(path, text) {
-          const blob = new Blob([text], { type: 'text/plain' });
-          const xhr = new XMLHttpRequest();
-          xhr.open('PUT', path);
-          xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4) {
-                if (xhr.status === 200 || xhr.status === 201) {
-                    console.log('Data written to file:', path);
-                } else {
-            console.log('Error writing data to file:', path);
-            }
-            }
-          };
-          xhr.send(blob);
+            const blob = new Blob([text], { type: 'text/plain' });
+            const xhr = new XMLHttpRequest();
+            xhr.open('PUT', path);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200 || xhr.status === 201) {
+                        console.log('Data written to file:', path);
+                    } else {
+                        console.log('Error writing data to file:', path);
+                    }
+                }
+            };
+            xhr.send(blob);
         }
         function buyOrder(d) {
-        let s = "Item,Price,In Stock"
-        for (let i in readFile("data.txt").split("\n")) {
-            s += "\n";
-            io = i.split("/")
-            if (io[0] != d) {
-            s += i;
-            } else {
-            s += io[0] + " " + (parseInt(io[1]) + 1).toString();
+            let s = "Item,Price,In Stock"
+            for (let i in readFile("data.txt").split("\n")) {
+                s += "\n";
+                io = i.split("/")
+                if (io[0] != d) {
+                    s += i;
+                } else {
+                    s += io[0] + " " + (parseInt(io[1]) + 1).toString();
+                }
+                writeFile("data.txt", s);
             }
-        }
-        
         }
     </script>
     </head>
@@ -56,14 +56,14 @@
             <li><a href="author.html">✍ Meet a Writer</a></li>
             <li><a href="checkout0.html">🛒 Checkout</a></li>
             <li>
-            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhuandrew37.github.io%2FWebsite_Design_HuAndrew%2Fcatalogue.html">
-                ✅ HTML Validation
-            </a>
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhuandrew37.github.io%2FWebsite_Design_HuAndrew%2Fcatalogue.html">
+                    ✅ HTML Validation
+                </a>
             </li>
             <li>
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhuandrew37.github.io%2FWebsite_Design_HuAndrew%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
-                ✅ CSS Validation
-            </a>
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhuandrew37.github.io%2FWebsite_Design_HuAndrew%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+                    ✅ CSS Validation
+                </a>
             </li>
         </ul>
         <h1 class="heading">
