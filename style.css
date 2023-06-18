@@ -81,6 +81,7 @@ text-indent:30px;
     width:fit-content;
     text-align:center;
     font-size:30px;
+    color:white;
 }
 #checkout-button:hover {
     background-color:#FF7377;
