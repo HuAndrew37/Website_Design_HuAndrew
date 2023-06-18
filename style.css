@@ -91,3 +91,7 @@ text-indent:30px;
 #sticky {
     position:sticky;
 }
+.icon-cover {
+    height:180px;
+    width:165px;
+}
