@@ -1,5 +1,0 @@
-Item,Price,In Stock
-4 trillion lions vs the Sun,14.99/0
-Spring: Beautiful Poetry from XVI-XXI,25.99/0
-Tales from the Outer Rim: Volume IV - Return of the Falcon,17.99/0
-HTML for Dummies,25.99/0
