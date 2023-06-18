@@ -4,6 +4,21 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Catalogue</title>
+	<script>
+	    // read from txt
+	    function readFile(path) {
+  		const xhr = new XMLHttpRequest();
+  		xhr.open('GET', path, false);
+  		xhr.send(null);
+  		if (xhr.status === 200) {
+    		    return xhr.responseText;
+		} else {
+		    console.log('Error reading file:', path);
+		    return '';
+		}
+	    }
+	    console.log(readFile("data.txt"))
+	  </script>
     </head>
     <body>
         <ul class="navbar">
