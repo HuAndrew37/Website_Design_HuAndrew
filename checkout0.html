@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Checkout</title>
         <script>
-            var x = 0;
+            localStorage["order-size"] = 0;
         </script>
     </head>
     <body>
@@ -51,7 +51,7 @@
                     4 trillion lions vs the Sun
                 </td>
                 <td class="catalogue-table">
-                    <button onclick="x += 1;document.getElementById('total-price').textContent = x.toString();">Order 1</button>
+                    <button onclick="localStorage["order-size"]+=14.99;document.getElementById('total-price').textContent = "$" + localStorage["order-size"].toString();">Order 1</button>
                 </td>
                 <td class="catalogue-table">$14.99</td>
             </tr>
@@ -83,9 +83,10 @@
                 <td class="catalogue-table">$25.99</td>
             </tr>
         </table>
+        <h2>Total price of order:</h2>
         <p id="total-price"></p>
         <br>
-        <a href="checkout0.html"><p id="checkout-button">Proceed to Checkout</p></a>
+        <a href="payment.html"><p id="payment-button">Proceed to Payment</p></a>
         <br>
         <hr>
         <h2>Reach out to us! General Inquiries:</h2>
