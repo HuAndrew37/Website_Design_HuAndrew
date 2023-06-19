@@ -61,8 +61,9 @@
                     <br>
                     Spring: Beautiful Poetry from XVI-XXI
                 </td>
-                <td class="catalogue-table"
-                    <button onclick="localStorage['order-size']=Math.round((parseFloat(localStorage['order-size']) + 25.99)*100)/100;document.getElementById('total-price').textContent = '$' + localStorage['order-size'];">Order 1</button></td>
+                <td class="catalogue-table">
+                    <button onclick="localStorage['order-size']=Math.round((parseFloat(localStorage['order-size']) + 25.99)*100)/100;document.getElementById('total-price').textContent = '$' + localStorage['order-size'];">Order 1</button>
+                </td>
                 <td class="catalogue-table">$25.99</td>
             </tr>
             <tr>
@@ -89,10 +90,10 @@
             </tr>
         </table>
         <h2>Total price of order:</h2>
-        <p id="total-price"></p>
+        <p id="total-price">$0.00</p>
         <br>
         <a href="payment.html"><p id="payment-button">Proceed to Payment</p></a>
-        <p id="payment-button" onclick="localStorage['order-size']=0;">Clear Purchases</p>
+        <p id="payment-button" onclick="localStorage['order-size']=0;document.getElementById('total-price').textContent = '$0.00';">Clear Purchases</p>
         <br>
         <hr>
         <h2>Reach out to us! General Inquiries:</h2>
