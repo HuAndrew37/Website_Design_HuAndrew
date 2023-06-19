@@ -71,6 +71,7 @@ text-indent:30px;
 .catalogue-table {
     border: 1px solid black;
     border-collapse: collapse;
+    width:80%;
 }
 .payment-button {
     border-radius:25px;
