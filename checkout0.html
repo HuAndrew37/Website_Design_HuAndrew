@@ -51,7 +51,7 @@
                     4 trillion lions vs the Sun
                 </td>
                 <td class="catalogue-table">
-                    <button onclick="localStorage['order-size']=parseFloat(localStorage['order-size']) + 14.99;document.getElementById('total-price').textContent = '$' + localStorage['order-size'];">Order 1</button>
+                    <button onclick="localStorage['order-size']=Math.round((parseFloat(localStorage['order-size']) + 14.99)*100)/100;document.getElementById('total-price').textContent = '$' + localStorage['order-size'];">Order 1</button>
                 </td>
                 <td class="catalogue-table">$14.99</td>
             </tr>
