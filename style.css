@@ -68,9 +68,10 @@ text-indent:30px;
 .img-attribution {
     font-size:8px;
 }
-.catalogue-table {
+.catalogue-table-1 {
     border: 1px solid black;
     border-collapse: collapse;
+    width:80%;
 }
 .payment-button {
     border-radius:25px;
@@ -105,9 +106,8 @@ text-indent:30px;
     width:16px;
     height:26px;
 }
-#table-display {
-    width:80%;
-}
-#table-purchase {
+.catalogue-table-2 {
+    border: 1px solid black;
+    border-collapse: collapse;
     width:50%;
 }
