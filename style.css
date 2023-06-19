@@ -101,3 +101,7 @@ text-indent:30px;
     height:380px;
     width:400px;
 }
+.timeline-chain-node {
+    width:16px;
+    height:26px;
+}
