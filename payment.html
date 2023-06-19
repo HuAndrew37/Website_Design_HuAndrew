@@ -4,9 +4,6 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Checkout</title>
-        <script>
-            document.getElementById('total-price').textContent = "$" + localStorage["order-size"].toString();
-        </script>
     </head>
     <body>
         <div id="sticky">
@@ -39,6 +36,9 @@
         <!-- subtitle -->
         <h5 class="heading">Total Price:</h5>
         <p id="total-price" class="heading"></p>
+        <script>
+            document.getElementById('total-price').textContent = "$" + localStorage["order-size"].toString();
+        </script>
         <form>
             <h2>Payment Items</h2>
             Card Type:
