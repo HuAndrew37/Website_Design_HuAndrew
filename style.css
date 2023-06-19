@@ -71,7 +71,6 @@ text-indent:30px;
 .catalogue-table {
     border: 1px solid black;
     border-collapse: collapse;
-    width:80%;
 }
 .payment-button {
     border-radius:25px;
@@ -105,4 +104,10 @@ text-indent:30px;
 .timeline-chain-node {
     width:16px;
     height:26px;
+}
+#table-display {
+    width:80%;
+}
+#table-purchase {
+    width:50%;
 }
