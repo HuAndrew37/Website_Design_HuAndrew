@@ -87,6 +87,8 @@ text-indent:30px;
 }
 #icon-inline-block {
     display:inline-block;
+    width:128px;
+    height:128px;
 }
 #sticky {
     position:sticky;
@@ -98,8 +100,4 @@ text-indent:30px;
 .full-book-cover {
     height:380px;
     width:400px;
-}
-#icon-logo {
-    width:128px;
-    height:128px;
 }
