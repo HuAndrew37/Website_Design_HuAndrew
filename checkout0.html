@@ -61,7 +61,8 @@
                     <br>
                     Spring: Beautiful Poetry from XVI-XXI
                 </td>
-                <td class="catalogue-table"></td>
+                <td class="catalogue-table"
+                    <button onclick="localStorage['order-size']=Math.round((parseFloat(localStorage['order-size']) + 25.99)*100)/100;document.getElementById('total-price').textContent = '$' + localStorage['order-size'];">Order 1</button>></td>
                 <td class="catalogue-table">$25.99</td>
             </tr>
             <tr>
@@ -70,7 +71,9 @@
                     <br>
                     Tales from the Outer Rim: Volume IV - Return of the Falcon
                 </td>
-                <td class="catalogue-table"></td>
+                <td class="catalogue-table">
+                    <button onclick="localStorage['order-size']=Math.round((parseFloat(localStorage['order-size']) + 17.99)*100)/100;document.getElementById('total-price').textContent = '$' + localStorage['order-size'];">Order 1</button>
+                </td>
                 <td class="catalogue-table">$17.99</td>
             </tr>
             <tr>
@@ -79,7 +82,9 @@
                     <br>
                     HTML for Dummies
                 </td>
-                <td class="catalogue-table"></td>
+                <td class="catalogue-table">
+                    <button onclick="localStorage['order-size']=Math.round((parseFloat(localStorage['order-size']) + 25.99)*100)/100;document.getElementById('total-price').textContent = '$' + localStorage['order-size'];">Order 1</button>
+                </td>
                 <td class="catalogue-table">$25.99</td>
             </tr>
         </table>
