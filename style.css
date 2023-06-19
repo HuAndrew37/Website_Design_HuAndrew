@@ -72,7 +72,7 @@ text-indent:30px;
     border: 1px solid black;
     border-collapse: collapse;
 }
-#payment-button {
+.payment-button {
     border-radius:25px;
     background-color:red;
     padding:40px;
@@ -82,7 +82,7 @@ text-indent:30px;
     font-size:30px;
     color:white;
 }
-#payment-button:hover {
+.payment-button:hover {
     background-color:#FF7377;
 }
 #icon-inline-block {
